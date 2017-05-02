@@ -5,4 +5,4 @@
 
 - name: Update cache with AWS facts if running on AWS
   ec2_facts:
-  when: "{{ ansible_bios_version | lower | search('amazon') }}"
+  when: ansible_bios_version | lower | search('amazon')
